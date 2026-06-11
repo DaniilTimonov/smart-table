@@ -11,7 +11,7 @@ export const initPagination = (
 
   const applyPagination = (query, state, action) => {
     const limit = state.rowsPerPage;
-    let page = state.page; // страница переменной, потому что она может меняться при обработке действий позже
+    let page = state.page;
     // @todo: #2.6 — обработать действия
     if (action)
       switch (action.name) {
